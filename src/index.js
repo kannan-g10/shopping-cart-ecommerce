@@ -1,9 +1,12 @@
 import ReactDOM from 'react-dom/client';
 
+import '../index.css';
+import App from './App';
+
 const Main = () => {
   return (
     <>
-      <h1>Hello world</h1>
+      <App />
     </>
   );
 };
