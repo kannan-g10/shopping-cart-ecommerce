@@ -11,23 +11,27 @@ const About = () => {
           className="w-56 h-56 rounded-full"
         />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aut enim
-          numquam hic aliquid quas minima error aspernatur accusantium
-          doloremque, nulla odio maiores dignissimos impedit nam. Officiis sunt
-          quos nulla voluptatum ea nisi, tenetur earum ut quibusdam harum quis
-          eos accusamus veritatis magni adipisci voluptatibus, impedit nesciunt
-          quia autem modi iste recusandae laboriosam. Maxime, eaque harum
-          excepturi minima accusantium commodi, adipisci, nobis facilis
-          exercitationem neque corrupti nihil optio officia. Atque consequuntur
-          at rem qui, cupiditate tenetur asperiores dignissimos fuga nam ab eos
-          aliquid aperiam sapiente ea quasi mollitia aliquam eaque enim
-          temporibus! Labore tempora necessitatibus nulla ad inventore ab
-          voluptates. Expedita perspiciatis magnam obcaecati facere sit
-          consectetur sunt eligendi maiores temporibus, consequuntur odit quas
-          quidem excepturi natus distinctio nihil esse repellendus qui
-          blanditiis, ipsam tenetur. Maxime, labore debitis? Magni, voluptatem?
-          Voluptatum, labore. Ipsum distinctio soluta illum, tempora nihil vel
-          explicabo!
+          Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
+          sorrows, hates no prosecutors will unfold in the enduring of which
+          were born in it? Often leads smallest mistake some pain main
+          responsibilities are to stand for the right builder of pleasure,
+          accepted explain up to now. , The things we are accusing of these in
+          the explication of the truth receives from the flattery of her will
+          never be the trouble and they are refused to the pleasures and the
+          pleasures of the pain, explain the treatment of excepturi of the
+          blessed sufferings. I never said will unfold in him receives at
+          another time he may please the one that those works, we are less than
+          they, this refused to the pleasures of deleniti? Those are! Will
+          unfold in times of pleasure, this pain will be a right enjoyed by
+          corrupt, are accusing him of all pleasures, and seek his own, or, to
+          the needs of the agony of the choice. We hate the fellow. Lorem ipsum
+          dolor, sit amet consectetur rebates. The distinction, that arise from
+          or to. The greater, therefore, an obstacle to the duties of the debts
+          receives the very great importance to us that these are consequent to
+          that question is answered, which was selected for the fault, it is
+          often one of us, however, have any! Moreover, this is often not at
+          once take the hardships of the life of harsh condemn, we are accusing
+          him? Him whom something large cisterns.
         </p>
       </div>
     </div>

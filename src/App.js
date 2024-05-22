@@ -5,6 +5,7 @@ import Products from './components/Products';
 import Footer from './components/Footer';
 import CartContextProvider from './store/CartContext';
 import About from './components/About';
+import Home from './components/Home';
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <CartContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Products />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/store" element={<Products />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
