@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { IoIosMoon } from 'react-icons/io';
 import Cart from './Cart';
 import { CartContext } from '../store/CartContext';
+import { Link } from 'react-router-dom';
+import About from './About';
 
 const Navbar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -19,13 +21,13 @@ const Navbar = () => {
         <div>
           <ul className="flex justify-between gap-4">
             <li className="cursor-pointer duration-500 hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
-              HOME
+              <Link to="/">HOME</Link>
             </li>
             <li className="cursor-pointer duration-500 hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
               STORE
             </li>
             <li className="cursor-pointer duration-500 hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
-              ABOUT
+              <Link to="/about">ABOUT</Link>
             </li>
           </ul>
         </div>

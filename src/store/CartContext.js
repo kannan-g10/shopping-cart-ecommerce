@@ -54,7 +54,7 @@ const CartContextProvider = ({ children }) => {
   };
 
   const clearCart = () => {
-    dispatch({ type: 'CLEAR_CART' });
+    if (state.items.length) dispatch({ type: 'CLEAR_CART' });
   };
 
   return (
