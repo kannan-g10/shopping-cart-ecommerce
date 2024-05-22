@@ -3,7 +3,7 @@ import CartItems from './CartItems';
 
 const Cart = ({ onClose }) => {
   return (
-    <div className="bg-white z-10 h-[92vh] w-[70vw] md:w-1/3 lg:1/4 fixed right-0">
+    <div className="bg-white z-10 h-[92vh] w-[70vw] md:w-1/3 lg:w-1/4 fixed right-0">
       <button
         className="text-black border-2 rounded-lg px-2 pb-1 absolute right-3 top-3 font-bold text-2xl hover:bg-slate-700 hover:text-white"
         onClick={onClose}
