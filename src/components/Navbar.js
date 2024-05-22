@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoIosMoon } from 'react-icons/io';
+import Cart from './Cart';
 
 const Navbar = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
   return (
     <>
-      <div className="w-full h-16 top-0 p-4 lg:px-10 bg-black text-white flex justify-between items-center fixed z-[1]">
+      <div className="w-full h-16 top-0 p-4 lg:px-10 bg-black text-white flex justify-between items-center fixed z-20">
         <div>
           <IoIosMoon
             size={20}
@@ -25,12 +28,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <button className="border-2 border-cyan-500 px-4 p-1 font-semibold rounded-lg hover:bg-cyan-300">
+          <button
+            className="border-2 border-cyan-500 px-4 p-1 font-semibold rounded-lg hover:bg-cyan-300"
+            onClick={() => setIsCartOpen(true)}
+          >
             cart
           </button>
           <sup className="text-2xl text-cyan-500 rounded-lg px-1">0</sup>
         </div>
       </div>
+      {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
       <div className="bg-[#777777]">
         <h1 className="text-8xl w-full mt-16 text-white font-serif font-bold p-5 text-wrap text-center">
           The Generics
