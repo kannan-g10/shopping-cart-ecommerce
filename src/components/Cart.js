@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CartItems from './CartItems';
+import { CartContext } from '../store/CartContext';
 
-const Cart = ({ onClose }) => {
+const Cart = ({ onClose, cartItems }) => {
+  const { state, clearCart } = useContext(CartContext);
   return (
-    <div className="bg-white z-10 h-[92vh] w-[70vw] md:w-1/3 lg:w-1/4 fixed right-0">
+    <div className="bg-white border border-red-800 z-10 h-[92vh] w-[70vw] md:w-1/3 lg:w-1/4 fixed right-0">
       <button
         className="text-black border-2 rounded-lg px-2 pb-1 absolute right-3 top-3 font-bold text-2xl hover:bg-slate-700 hover:text-white"
         onClick={onClose}
@@ -27,14 +29,17 @@ const Cart = ({ onClose }) => {
           <div className="w-24 border border-black"></div>
         </div>
       </div>
-      <CartItems />
-      <CartItems />
-      <CartItems />
+      {cartItems.items.map(item => (
+        <CartItems item={item} key={item.imageUrl} />
+      ))}
       <div className="flex gap-4 right-6 absolute">
         <p className="font-semibold text-2xl font-serif">Total</p>
-        <p className="text-xl">$12.99</p>
+        <p className="text-xl">${state.totalAmount}</p>
       </div>
-      <button className="mx-32 my-3 mt-10 p-3 bg-cyan-400 hover:bg-cyan-500 text-white font-semibold text-xl rounded-md">
+      <button
+        className="mx-32 my-3 mt-10 p-3 bg-cyan-400 hover:bg-cyan-500 text-white font-semibold text-xl rounded-md"
+        onClick={clearCart}
+      >
         PURCHASE
       </button>
     </div>

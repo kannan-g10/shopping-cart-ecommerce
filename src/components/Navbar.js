@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { IoIosMoon } from 'react-icons/io';
 import Cart from './Cart';
+import { CartContext } from '../store/CartContext';
 
 const Navbar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { state } = useContext(CartContext);
 
   return (
     <>
@@ -16,13 +18,13 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="flex justify-between gap-4">
-            <li className="cursor-pointer hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
+            <li className="cursor-pointer duration-500 hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
               HOME
             </li>
-            <li className="cursor-pointer  hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
+            <li className="cursor-pointer duration-500 hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
               STORE
             </li>
-            <li className="cursor-pointer  hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
+            <li className="cursor-pointer duration-500 hover:bg-cyan-400 p-2 rounded-lg text-[18px] font-semibold">
               ABOUT
             </li>
           </ul>
@@ -34,10 +36,14 @@ const Navbar = () => {
           >
             cart
           </button>
-          <sup className="text-2xl text-cyan-500 rounded-lg px-1">0</sup>
+          <sup className="text-2xl text-cyan-500 rounded-lg px-1">
+            {state.items.length}
+          </sup>
         </div>
       </div>
-      {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
+      {isCartOpen && (
+        <Cart onClose={() => setIsCartOpen(false)} cartItems={state} />
+      )}
       <div className="bg-[#777777]">
         <h1 className="text-8xl w-full mt-16 text-white font-serif font-bold p-5 text-wrap text-center">
           The Generics

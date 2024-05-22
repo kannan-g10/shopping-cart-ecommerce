@@ -3,14 +3,15 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Products from './components/Products';
 import Footer from './components/Footer';
+import CartContextProvider from './store/CartContext';
 
 const App = () => {
   return (
-    <div>
+    <CartContextProvider>
       <Navbar />
       <Products />
       <Footer />
-    </div>
+    </CartContextProvider>
   );
 };
 
