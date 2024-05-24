@@ -41,7 +41,7 @@ const Tour = () => {
   ];
   return (
     <>
-      <p className="text-center font-bold text-3xl my-5">TOURS</p>
+      <p className="text-center font-bold text-3xl my-5 font-mania">TOURS</p>
       {tours.map((tour, index) => (
         <div
           className="w-1/2 flex justify-center gap-10 mx-auto border-b-2 py-2 border-cyan-500 mb-5"

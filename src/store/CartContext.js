@@ -26,7 +26,6 @@ const reducer = (state, action) => {
       const removeItem = state.items.find(
         item => item.imageUrl == action.payload
       );
-      console.log(action.payload, removeItem);
       return {
         items: state.items.filter(item => item.imageUrl != action.payload),
         totalAmount: state.totalAmount - removeItem.price,
