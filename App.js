@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Products from './components/Products';
-import CartContextProvider from './store/CartContext';
-import About from './components/About';
-import Home from './components/Home';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Error from './components/Error';
-import PrivateRouter from './components/PrivateRouter';
+import Products from './src/components/Products';
+import CartContextProvider from './src/store/CartContext';
+import About from './src/components/About';
+import Home from './src/components/Home';
+import Signup from './src/components/Signup';
+import Login from './src/components/Login';
+import Error from './src/components/Error';
+import PrivateRouter from './src/components/PrivateRouter';
 
 const App = () => {
   const user = localStorage.getItem('user-name') || null;
